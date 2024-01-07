@@ -1,0 +1,140 @@
+
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <meta name="UTM URL Builder" content="" />
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <!-- End Google Tag Manager -->
+
+        <title>URL Builder</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <link  rel="stylesheet" media="screen" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script defer type="text/javascript" src="assets/js/scripts.js"></script>
+    
+        
+  </head>
+  <body>
+    
+  
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav text-right">
+            <li class="nav-item"><a class="nav-link" href="#"></a></li>
+            <li class="nav-item dropdown border-0">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> </a>
+                <ul class="dropdown-menu custom-dropdown border-0" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="javascript:;"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"></a> </li>
+            <li class="nav-item"><a class="nav-link" href="#"></a> </li>
+            <li class="nav-item"><a class="nav-link" href="#"></a> </li>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+      
+    <main>
+
+
+      <section class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3 class="header_text mb-3">Enter The Website Url And Campaign Information </h3>
+            <p>Fill out the required fields (marked with *) in the form below, and once complete the full campaign URL will be generated for you. Note: the generated URL is automatically updated as you make changes. </p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-9">
+            <form class="form-utm">
+              <div class="mb-3 row">
+                <label for="url-input" class="col-sm-2 col-form-label">Website Url</label>
+                <div class="col-sm-9">
+                  <input onkeyup="createUtm()" id="url-input" size="50" type="text" class="form-control"  name="" value="" required>
+                    <span class="form-text text-muted">The full website url (e.g. https://www.example.com)</span>
+                </div>
+              </div>
+    
+              <div class="mb-3 row">
+                <label for="source-input" class="col-sm-2 col-form-label">Campaign Source</label>
+                <div class="col-sm-9">
+                    <input onkeyup="createUtm()" id="source-input" type="text" class="form-control" name="" value="" required>
+                    <span class="form-text text-muted">The Referrer: (e.g. Google, Newsletter)*</span>
+                </div>
+              </div>
+    
+              <div class="mb-3 row">
+                <label for="medium-input" class="col-sm-2 col-form-label">Campaign Medium</label>
+                <div class="col-sm-9">
+                    <input onkeyup="createUtm()" id="medium-input" type="text" class="form-control" name="" value="" required>
+                    <span class="form-text text-muted">Marketing Medium: (e.g. CPC, Banner, Email)*</span>
+                </div>
+              </div>
+    
+              <div class="mb-3 row">
+                <label for="campaign-input" class="col-sm-2 col-form-label">Campaign Name</label>
+                <div class="col-sm-9">
+                    <input onkeyup="createUtm()" id="campaign-input" type="text" class="form-control" name="" value="" required>
+                    <span class="form-text text-muted">Product, promo doce, or slogan (e.g. spring_sale)*</span>
+                </div>
+              </div>
+              
+              <div class="mb-3 row">
+                <label for="term-input" class="col-sm-2 col-form-label">Campaign Term</label>
+                <div class="col-sm-9">
+                    <input onkeyup="createUtm()" id="term-input" type="text" class="form-control" name="" value="" required>
+                    <span class="form-text text-muted">Identify the paid keywords</span><br>
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="content-input" class="col-sm-2 col-form-label">Campaign Content</label>
+                <div class="col-sm-9">
+                    <input onkeyup="createUtm()" id="content-input" type="text" class="form-control" name="" value="" required>
+                    <span class="form-text text-muted">Use to differentiate ads*</span>
+                </div>
+              </div>
+    
+              <div class="mb-3 row">
+                <!--<p class="sd-p">Fill out the required fields above, and a URL will be automatically generated for you here.  </p>-->
+                <div class="col-sm-11">
+                    <textarea id="utm" readonly class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        
+          
+        </div>
+
+      </section>
+
+      
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script  type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
